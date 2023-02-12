@@ -46,7 +46,14 @@ cd unified-modeling-language
 python3 oven/src/oven.py
 ```
 
-## Documentation
+## Oven Documentation
 
-* ![Oven UML diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/oven.drawio.png)
-* ![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/classes.oven.png)
+![Oven UML diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/oven.drawio.png)
+
+![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/classes.oven.png)
+
+## License
+
+MIT License
+
+Copyright (c) 2023 Marcin Sielski
