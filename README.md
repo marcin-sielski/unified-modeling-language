@@ -1,2 +1,2 @@
-# unified_modelling_language
+# unified_modeling_language
 Playground for UML
