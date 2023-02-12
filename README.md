@@ -28,7 +28,8 @@ sudo apt install ./code-amd64.deb
 * diagrams.net
 
 ```bash
-wget https://github.com/jgraph/drawio-desktop/releases/download/v20.8.16/drawio-amd64-20.8.16.deb -O drawio-amd64.deb
+wget https://github.com/jgraph/drawio-desktop/releases/download/v20.8.16/drawio-amd64-20.8.16.deb \
+    -O drawio-amd64.deb
 ```
 
 ```bash
