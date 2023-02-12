@@ -48,5 +48,5 @@ python3 oven/src/oven.py
 
 ## Documentation
 
-* ![Oven UML diagrams](https://github.com/marcin-sielski/unified-modeling-language/oven/doc/oven.drawio.png)
-* ![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/oven/doc/classes.oven.png)
+* ![Oven UML diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/oven.drawio.png)
+* ![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/classes.oven.png)
