@@ -48,6 +48,9 @@ git clone https://github.com/marcin-sielski/unified-modeling-language.git
 
 ```bash
 cd unified-modeling-language
+```
+
+```bash
 python3 oven/src/oven.py
 ```
 
