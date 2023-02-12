@@ -61,4 +61,4 @@ python3 oven/src/oven.py
 
 MIT License
 
-Copyright (c) 2023 Marcin Sielski
+Copyright (c) 2023 Marcin Sielski <marcin.sielski@gmail.com>
