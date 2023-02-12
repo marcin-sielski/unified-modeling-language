@@ -2,7 +2,7 @@
 
 This repository in playground for UML.
 
-## Update Ubuntu/Debian system
+## Install Dependencies
 
 ```bash
 sudo apt update
@@ -10,6 +10,10 @@ sudo apt update
 
 ```bash
 sudo apt upgrade
+```
+
+```bash
+pip3 install playsound
 ```
 
 ## Install UML tools under Ubuntu/Debian

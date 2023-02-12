@@ -25,6 +25,7 @@ from time import sleep
 from threading import Timer
 import threading
 import inspect
+from playsound import playsound
 
 
 
@@ -267,6 +268,8 @@ class OvenPanel:
         function_name = "'" + threading.currentThread().name + "'." + \
             type(self).__name__ + '.' + inspect.currentframe().f_code.co_name
         print(function_name)
+
+        playsound('oven/snd/phone.wav')
 
 
     def hot(self):
