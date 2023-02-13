@@ -1,6 +1,6 @@
 # Unified Modeling Language
 
-This repository in playground for UML.
+This repository is playground for UML.
 
 ## Install Dependencies
 
