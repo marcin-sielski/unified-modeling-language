@@ -13,10 +13,14 @@ sudo apt upgrade
 ```
 
 ```bash
+sudo apt install pylint3
+```
+
+```bash
 pip3 install playsound
 ```
 
-## Install UML tools under Ubuntu/Debian
+## Install UML Tools Under Ubuntu/Debian
 
 * Visual Studio Code
 
@@ -40,7 +44,7 @@ wget https://github.com/jgraph/drawio-desktop/releases/download/v20.8.16/drawio-
 sudo apt install drawio-amd64.deb
 ```
 
-## Download repository and run oven example model
+## Download Repository And Run Oven Model Example
 
 ```bash
 git clone https://github.com/marcin-sielski/unified-modeling-language.git
@@ -52,6 +56,12 @@ cd unified-modeling-language
 
 ```bash
 python3 oven/src/oven.py
+```
+
+## Generate UML Class Diagrmas From Source Code
+
+```bash
+cd oven/doc && pyreverse3 -o png ../src/oven.py
 ```
 
 ## Oven Documentation
