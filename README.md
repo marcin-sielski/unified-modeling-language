@@ -58,7 +58,7 @@ cd unified-modeling-language
 python3 oven/src/oven.py
 ```
 
-## Generate UML Class Diagrmas From Source Code
+## Generate UML Class Diagrams From Source Code
 
 ```bash
 cd oven/doc && pyreverse3 -o png ../src/oven.py
