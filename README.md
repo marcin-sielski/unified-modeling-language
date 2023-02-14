@@ -61,14 +61,15 @@ python3 oven/src/oven.py
 ## Generate UML Class Diagrams From Source Code
 
 ```bash
-cd oven/doc && pyreverse3 -o png ../src/oven.py
+cd oven/doc && pyreverse3 -o oven.png ../src/oven.py && cd ../.. && \
+    convert -negate oven/doc/classes.oven.png oven/doc/negative.classes.oven.png
 ```
 
 ## Oven Documentation
 
 ![Oven UML diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/oven.drawio.png)
 
-![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/classes.oven.png)
+![Oven UML class diagrams](https://github.com/marcin-sielski/unified-modeling-language/blob/main/oven/doc/negative.classes.oven.png)
 
 ## License
 

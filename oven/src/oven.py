@@ -97,7 +97,7 @@ class OvenPanel:
         self.__hot = False
         self.__enabled = False
         self.__time = 20
-        self.__timer_cancel = Timer(5, self.cancel)
+        self.__timer_cancel = Timer(5, self.__cancel)
         self.__light_indicator = False
 
 
@@ -136,7 +136,7 @@ class OvenPanel:
                 self.__timer_cancel.cancel()
                 if self.__timer_cancel.isAlive():
                     self.__timer_cancel.join()
-                self.__timer_cancel = Timer(5, self.cancel)
+                self.__timer_cancel = Timer(5, self.__cancel)
                 self.__timer_cancel.name = 'TimerCancel'
                 self.__timer_cancel.start()
                 if self.__time < 180:
@@ -168,7 +168,7 @@ class OvenPanel:
                 self.__timer_cancel.cancel()
                 if self.__timer_cancel.isAlive():
                     self.__timer_cancel.join()
-                self.__timer_cancel = Timer(5, self.cancel)
+                self.__timer_cancel = Timer(5, self.__cancel)
                 self.__timer_cancel.name = 'TimerCancel'
                 self.__timer_cancel.start()
                 if self.__time > 20:
@@ -224,7 +224,7 @@ class OvenPanel:
             self.__option = OvenOption.TIME.value
 
 
-    def cancel(self):
+    def __cancel(self):
         '''
         Cancel
         '''
@@ -262,7 +262,7 @@ class OvenPanel:
             print(function_name)
 
 
-    def ring(self):
+    def __ring(self):
         '''
         Ring
         '''
@@ -285,7 +285,7 @@ class OvenPanel:
         if not self.__hot:
             print(function_name)
             self.__hot = True
-            self.ring()
+            self.__ring()
 
 
     def ready(self):
@@ -298,7 +298,7 @@ class OvenPanel:
         print(function_name)
 
         for _ in range(5):
-            self.ring()
+            self.__ring()
 
 
 
@@ -319,8 +319,8 @@ class Oven:
         self.__panel = OvenPanel(self)
         self.__temperature = 0
         self.__temperature_target = 0
-        self.__timer_heating = RepeatTimer(0.01, self.heating)
-        self.__timer_cooling = RepeatTimer(0.03, self.cooling)
+        self.__timer_heating = RepeatTimer(0.01, self.__heating)
+        self.__timer_cooling = RepeatTimer(0.03, self.__cooling)
         self.__off = False
         self.__hot = False
         self.__schedule_heating = False
@@ -347,7 +347,7 @@ class Oven:
         self.__off = True
 
 
-    def heating(self):
+    def __heating(self):
         '''
         Heating
         '''
@@ -364,7 +364,7 @@ class Oven:
             self.__hot = True
 
 
-    def cooling(self):
+    def __cooling(self):
         '''
         Cooling
         '''
@@ -400,13 +400,13 @@ class Oven:
         self.__timer_heating.cancel()
         if self.__timer_heating.isAlive():
             self.__timer_heating.join()
-        self.__timer_heating = RepeatTimer(1, self.heating)
+        self.__timer_heating = RepeatTimer(1, self.__heating)
         self.__timer_heating.name = 'TimerHeating'
         self.__timer_heating.start()
         self.__timer_cooling.cancel()
         if self.__timer_cooling.isAlive():
             self.__timer_cooling.join()
-        self.__timer_cooling = RepeatTimer(3, self.cooling)
+        self.__timer_cooling = RepeatTimer(3, self.__cooling)
         self.__timer_cooling.name = 'TimerCooling'
         self.__timer_cooling.start()
 
